@@ -18,7 +18,7 @@ public class PhoneBook {
     /** 
      * The File Location For The Contact.txt
      */
-    String file_location = "/home/somto/Documents/programming/java/PhoneBook/resources/Contacts.txt";
+    String file_location = System.getProperty("user.dir").split("/build")[0] + "/resources/Contacts.txt";
 
     /**
      * A Collection to hold all contacts read from the contacts.txt file
